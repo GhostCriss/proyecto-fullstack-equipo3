@@ -10,4 +10,4 @@
 | [Servicio 5] | [Compañero] | [Link al repo] |
 
 ## Despliegue Técnico
-Cada integrante levanta su servicio en su propia EC2 con `docker compose up -d`.
+
