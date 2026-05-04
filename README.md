@@ -5,8 +5,8 @@
 | :--- | :--- | :--- |
 | Inventario-Service | Cristobal Ruiz | https://github.com/GhostCriss/inventario-service |
 | Gestión-Pedidos | Cristobal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
-| [Servicio 3] | [Compañero] | [Link al repo] |
-| [Servicio 4] | [Compañero] | [Link al repo] |
+| Favoritos-Service | Josefa Lagos | https://github.com/josefalagos/favorito-service |
+| Promociones-service | Josefa Lagos | https://github.com/josefalagos/promociones-service |
 | [Servicio 5] | [Compañero] | [Link al repo] |
 
 ## Despliegue Técnico
