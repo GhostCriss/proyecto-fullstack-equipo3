@@ -4,7 +4,7 @@
 | Servicio | Encargado | Repositorio |
 | :--- | :--- | :--- |
 | Inventario-Service | Cristobal Ruiz | https://github.com/GhostCriss/inventario-service |
-| Gestión-Pedidos | Cristobal Ruiz | https://github.com/GhostCriss/gestion-logistica-service |
+| Gestión-Pedidos | Cristobal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
 | [Servicio 3] | [Compañero] | [Link al repo] |
 | [Servicio 4] | [Compañero] | [Link al repo] |
 | [Servicio 5] | [Compañero] | [Link al repo] |
