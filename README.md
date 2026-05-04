@@ -3,8 +3,8 @@
 ## Microservicios y Repositorios
 | Servicio | Encargado | Repositorio |
 | :--- | :--- | :--- |
-| Inventario-Service | [Tu Nombre] | [Link a tu repo inventario-service] |
-| Gestión-Pedidos | [Tu Nombre] | [Link a tu repo gestion-pedidos] |
+| Inventario-Service | [Cristobal Ruiz] | [https://github.com/GhostCriss/inventario-service] |
+| Gestión-Pedidos | [Cristobal Ruiz] | [Link a tu repo gestion-pedidos] |
 | [Servicio 3] | [Compañero] | [Link al repo] |
 | [Servicio 4] | [Compañero] | [Link al repo] |
 | [Servicio 5] | [Compañero] | [Link al repo] |
