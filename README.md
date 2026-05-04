@@ -11,3 +11,16 @@
 
 ## Despliegue Técnico
 
+
+De acuerdo con los lineamientos establecidos para la **Modalidad Opción A (Descentralizada)**, el sistema se ha implementado bajo una arquitectura distribuida que garantiza la independencia operativa de cada componente.
+
+### Infraestructura Cloud
+* **Plataforma:** Se utilizan instancias independientes de **AWS EC2** ejecutando el sistema operativo **Ubuntu 24.04 LTS**.
+* **Aislamiento:** Cada microservicio reside en una instancia dedicada, lo que permite una gestión de recursos y escalabilidad granular por cada miembro del equipo.
+
+### Orquestación y Contenedores
+La gestión del ciclo de vida de los servicios se realiza mediante **Docker Compose**, asegurando la paridad entre los entornos de desarrollo y producción.
+El despliegue se ejecuta mediante el siguiente procedimiento técnico:
+```bash
+docker compose up -d --build
+
