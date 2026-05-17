@@ -89,10 +89,10 @@ docker compose up -d --build
 ---
 
 ###  Escenario de Despliegue y Resiliencia Cloud
-[cite_start]De acuerdo al diseño de infraestructura **Escenario B (Multi-Host VPC)**, los servicios interactúan cruzando la red interna de AWS mediante el mapeo dinámico de variables de entorno hacia IPs privadas fijas (Elastic IPs) de instancias dedicadas[cite: 334, 335, 383, 966].
+De acuerdo al diseño de infraestructura **Escenario B (Multi-Host VPC)**, los servicios interactúan cruzando la red interna de AWS mediante el mapeo dinámico de variables de entorno hacia IPs privadas fijas de instancias dedicadas[cite: 334, 335, 383, 966].
 
 #### Directivas de Tolerancia a Fallos e Integridad (application.properties)
-[cite_start]Cada cliente declarativo Feign tiene inyectadas propiedades estrictas de tiempo límite (Timeouts) para mitigar el bloqueo indefinido de hilos de ejecución (*Thread Starvation*) y caídas en cascada ante interrupciones de red cloud[cite: 458, 621, 623, 1012, 1020]:
+Cada cliente declarativo Feign tiene inyectadas propiedades estrictas de tiempo límite (Timeouts) para mitigar el bloqueo indefinido de hilos de ejecución y caídas en cascada ante interrupciones de red cloud[cite: 458, 621, 623, 1012, 1020]:
 
 ```properties
 # Tiempos Límites para Conexiones Distribuidas (Milisegundos)
