@@ -29,6 +29,48 @@ El despliegue se ejecuta mediante el siguiente procedimiento técnico:
 ```bash
 docker compose up -d --build
 ```
+# Comunicación entre Microservicios (Hito 2)
+
+### Diagrama de Dependencias y Flujos del Dominio
+[cite_start]El ecosistema de Amazorg está dividido en tres zonas funcionales autónomas distribuidas por instancias dedicadas en la nube[cite: 973, 1011]:
+
+```text
+       ZONA B: EXPERIENCIA Y ACCESO (Diego)
+      ┌─────────────────────────────────────┐
+      │  ┌───────────┐       ┌───────────┐  │
+      │  │ Catálogo  │◀──────│  Carrito  │  │
+      │  │  (:8082)  │  GET  │  (:8083)  │  │
+      │  └───────────┘       └─────┬─────┘  │
+      └────────────────────────────┼────────┘
+                                   │ Gatilla
+                                   ▼ Compra
+┌────────────────────────────────────────────────────────────────────────┐
+│ ZONA A: NÚCLEO TRANSACCIONAL E INFRAESTRUCTURA BASE (Cristóbal)        │
+│                                                                        │
+│               ┌──────────────────────────────┐                         │
+│   ┌──────────▶│  Gestión de Pedidos (:8086)  │◀────────────┐           │
+│   │   GET     │      [Orquestador Core]      │   GET       │           │
+│   │           └─┬───┬────────────┬────┬────┬──┘             │           │
+│   │             │   │            │    │    │               │           │
+│   │         POST│   │POST    POST│    │POST│POST           │           │
+│   │             ▼   ▼            ▼    ▼    ▼               │           │
+│   │   ┌───────────┐┌───────────┐┌──────┐┌──────────┐       │           │
+│   │   │Inventario ││Autentica  ││Pagos ││Envíos    │       │           │
+│   │   │  (:8087)  ││  (:8081)  ││(:8089)│(:8088)   │       │           │
+│   │   └─────▲─────┘└───────────┘└──────┘└──────────┘       │           │
+│   │         │                                              │           │
+└───┼─────────┼──────────────────────────────────────────────┼───────────┘
+    │         │ POST (Restaurar)                             │
+    │         │                                              │
+┌───┴─────────┴──────────────────────────────────────────────┴───────────┐
+│ ZONA C: MARKETING Y POST-VENTA (Josefa)                                │
+│                                                                        │
+│  ┌──────────────────────────┐               ┌───────────────────────┐  │
+│  │  Post-venta y Reembolsos  │─────────────▶│Promociones/Descuentos │  │
+│  │          (:8090)         │     POST      │        (:8085)        │  │
+│  └──────────────────────────┘               └───────────────────────┘  │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
 ###  Matriz de Contratos Formales de la API
 [cite_start]Los contratos HTTP definen las firmas de los endpoints remotos que actúan como proveedores de datos dentro de la red del ecosistema[cite: 1008, 1009]:
