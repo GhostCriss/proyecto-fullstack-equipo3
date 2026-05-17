@@ -3,7 +3,7 @@
 ## Microservicios y Repositorios
 | Servicio | Encargado | Repositorio |
 | :--- | :--- | :--- |
-| Inventario-Service | Cristobal Ruiz | https://github.com/GhostCriss/inventario-service |
+| Pagos-Service | Cristobal Ruiz | https://github.com/GhostCriss/pagos-service |
 | Envios-Logistica | Cristobal Ruiz | https://github.com/GhostCriss/envio-service |
 | Inventario-Service | Cristobal Ruiz | https://github.com/GhostCriss/inventario-service |
 | Gestión-Pedidos | Cristobal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
