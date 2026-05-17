@@ -9,7 +9,10 @@
 | Pedidos-Service | Cristobal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
 | Favoritos-Service | Josefa Lagos | https://github.com/josefalagos/favorito-service |
 | Promociones-service | Josefa Lagos | https://github.com/josefalagos/promociones-service |
+|  | Josefa Lagos |  |
 | Carrito-service | Diego Sanzana | https://github.com/DIEGHOT/carrito-service |
+|  | Diego Sanzana |  |
+|  | Diego Sanzana |  |
 
 ## Despliegue Técnico
 
