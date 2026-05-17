@@ -4,6 +4,8 @@
 | Servicio | Encargado | Repositorio |
 | :--- | :--- | :--- |
 | Inventario-Service | Cristobal Ruiz | https://github.com/GhostCriss/inventario-service |
+| Envios-Logistica | Cristobal Ruiz | https://github.com/GhostCriss/envio-service |
+| Inventario-Service | Cristobal Ruiz | https://github.com/GhostCriss/inventario-service |
 | Gestión-Pedidos | Cristobal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
 | Favoritos-Service | Josefa Lagos | https://github.com/josefalagos/favorito-service |
 | Promociones-service | Josefa Lagos | https://github.com/josefalagos/promociones-service |
