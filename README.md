@@ -30,7 +30,7 @@ El despliegue se ejecuta mediante el siguiente procedimiento técnico:
 docker compose up -d --build
 ```
 
-### 📋 Matriz de Contratos Formales de la API
+###  Matriz de Contratos Formales de la API
 [cite_start]Los contratos HTTP definen las firmas de los endpoints remotos que actúan como proveedores de datos dentro de la red del ecosistema[cite: 1008, 1009]:
 
 | Servicio Origen (Cliente) | Servicio Destino (Proveedor) | Encargado | Verbo | Ruta del Endpoint | Objeto Transportado (DTO) | Propósito del Flujo |
@@ -46,7 +46,7 @@ docker compose up -d --build
 
 ---
 
-### ⚙️ Escenario de Despliegue y Resiliencia Cloud
+###  Escenario de Despliegue y Resiliencia Cloud
 [cite_start]De acuerdo al diseño de infraestructura **Escenario B (Multi-Host VPC)**, los servicios interactúan cruzando la red interna de AWS mediante el mapeo dinámico de variables de entorno hacia IPs privadas fijas (Elastic IPs) de instancias dedicadas[cite: 334, 335, 383, 966].
 
 #### Directivas de Tolerancia a Fallos e Integridad (application.properties)
