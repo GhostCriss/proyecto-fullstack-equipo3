@@ -77,14 +77,14 @@ docker compose up -d --build
 
 | Servicio Origen (Cliente) | Servicio Destino (Proveedor) | Encargado | Verbo | Ruta del Endpoint | Objeto Transportado (DTO) | Propósito del Flujo |
 | :--- | :--- | :--- | :---: | :--- | :--- | :--- |
-| **Pedidos** (:8086) | **Autenticación** (:8081) | Diego | `GET` | `/api/usuarios/{id}` | `UsuarioDTO` | [cite_start]Validar estado activo de cuenta del comprador[cite: 999, 1010]. |
-| **Pedidos** (:8086) | **Inventario** (:8087) | Cristóbal | `POST` | `/api/inventario/descontar` | `StockRequestDTO` $\rightarrow$ `StockResponseDTO` | [cite_start]Validación de lote y descuento físico de existencias[cite: 999, 1010]. |
-| **Pedidos** (:8086) | **Promociones** (:8085) | Josefa | `POST` | `/api/promociones/validar` | `CuponDTO` | [cite_start]Liquidar cupones de descuento activos sobre el total[cite: 999, 1010]. |
-| **Pedidos** (:8086) | **Módulo de Pagos** (:8089) | Cristóbal | `POST` | `/api/pagos/procesar` | `PagoCreateDTO` $\rightarrow$ `PagoResponseDTO` | [cite_start]Transaccionar cargo bancario y visar estado financiero[cite: 1003, 1010]. |
-| **Pedidos** (:8086) | **Envíos y Logística** (:8088) | Cristóbal | `POST` | `/api/envios/generar` | `EnvioRequestDTO` $\rightarrow$ `EnvioDTO` | [cite_start]Generar tracking de despacho post-pago confirmado[cite: 1004, 1010]. |
-| **Post-venta** (:8090) | **Gestión de Pedidos** (:8086) | Cristóbal | `GET` | `/api/pedidos/{id}` | `PedidoHistorialDTO` | [cite_start]Asegurar inmutabilidad contable del cobro original[cite: 1007, 1010]. |
-| **Post-venta** (:8090) | **Inventario** (:8087) | Cristóbal | `POST` | `/api/inventariodevolver/` | `RestaurarStockDTO` | [cite_start]Reincorporación física de productos devueltos a bodega[cite: 1007, 1010]. |
-| **Carrito** (:8083) | **Catálogo** (:8082) | Diego | `GET` | `/api/productos/{id}/stock` | `ProductoStockDTO` | [cite_start]Comprobación en tiempo real previa a la pre-selección[cite: 984, 1010]. |
+| **Pedidos** (:8086) | **Autenticación** (:8081) | Diego | `GET` | `/api/usuarios/{id}` | `UsuarioDTO` | Validar estado activo de cuenta del comprador[cite: 999, 1010]. |
+| **Pedidos** (:8086) | **Inventario** (:8087) | Cristóbal | `POST` | `/api/inventario/descontar` | `StockRequestDTO` $\rightarrow$ `StockResponseDTO` | Validación de lote y descuento físico de existencias[cite: 999, 1010]. |
+| **Pedidos** (:8086) | **Promociones** (:8085) | Josefa | `POST` | `/api/promociones/validar` | `CuponDTO` | Liquidar cupones de descuento activos sobre el total[cite: 999, 1010]. |
+| **Pedidos** (:8086) | **Módulo de Pagos** (:8089) | Cristóbal | `POST` | `/api/pagos/procesar` | `PagoCreateDTO` $\rightarrow$ `PagoResponseDTO` | Transaccionar cargo bancario y visar estado financiero[cite: 1003, 1010]. |
+| **Pedidos** (:8086) | **Envíos y Logística** (:8088) | Cristóbal | `POST` | `/api/envios/generar` | `EnvioRequestDTO` $\rightarrow$ `EnvioDTO` | Generar tracking de despacho post-pago confirmado[cite: 1004, 1010]. |
+| **Post-venta** (:8090) | **Gestión de Pedidos** (:8086) | Cristóbal | `GET` | `/api/pedidos/{id}` | `PedidoHistorialDTO` | Asegurar inmutabilidad contable del cobro original[cite: 1007, 1010]. |
+| **Post-venta** (:8090) | **Inventario** (:8087) | Cristóbal | `POST` | `/api/inventariodevolver/` | `RestaurarStockDTO` | Reincorporación física de productos devueltos a bodega[cite: 1007, 1010]. |
+| **Carrito** (:8083) | **Catálogo** (:8082) | Diego | `GET` | `/api/productos/{id}/stock` | `ProductoStockDTO` | Comprobación en tiempo real previa a la pre-selección[cite: 984, 1010]. |
 
 ---
 
