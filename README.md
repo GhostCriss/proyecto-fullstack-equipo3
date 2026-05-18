@@ -32,7 +32,7 @@ docker compose up -d --build
 # Comunicación entre Microservicios (Hito 2)
 
 ### Diagrama de Dependencias y Flujos del Dominio
-[cite_start]El ecosistema de Amazorg está dividido en tres zonas funcionales autónomas distribuidas por instancias dedicadas en la nube[cite: 973, 1011]:
+El ecosistema de Amazorg está dividido en tres zonas funcionales autónomas distribuidas por instancias dedicadas en la nube[cite: 973, 1011]:
 
 ```text
        ZONA B: EXPERIENCIA Y ACCESO (Diego)
@@ -73,7 +73,7 @@ docker compose up -d --build
 ```
 
 ###  Matriz de Contratos Formales de la API
-[cite_start]Los contratos HTTP definen las firmas de los endpoints remotos que actúan como proveedores de datos dentro de la red del ecosistema[cite: 1008, 1009]:
+Los contratos HTTP definen las firmas de los endpoints remotos que actúan como proveedores de datos dentro de la red del ecosistema[cite: 1008, 1009]:
 
 | Servicio Origen (Cliente) | Servicio Destino (Proveedor) | Encargado | Verbo | Ruta del Endpoint | Objeto Transportado (DTO) | Propósito del Flujo |
 | :--- | :--- | :--- | :---: | :--- | :--- | :--- |
