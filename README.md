@@ -9,7 +9,7 @@
 | Pedidos-Service | Cristobal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
 | Favoritos-Service | Josefa Lagos | https://github.com/josefalagos/favorito-service |
 | Promociones-service | Josefa Lagos | https://github.com/josefalagos/promociones-service |
-| Post-venta y Reembolsos | Josefa Lagos | https://github.com/josefalagos/post-ventas_y_rembolsos-service |
+| Reembolsos-service | Josefa Lagos | https://github.com/josefalagos/post-ventas_y_rembolsos-service |
 | Carrito-service | Diego Sanzana | https://github.com/DIEGHOT/carrito-service |
 | Catalogo-service | Diego Sanzana | https://github.com/DIEGHOT/catalogo-service |
 | Autenticacion-Service | Diego Sanzana | https://github.com/DIEGHOT/autenticacion-service |
