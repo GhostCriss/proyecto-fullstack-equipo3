@@ -12,7 +12,7 @@
 |  | Josefa Lagos |  |
 | Carrito-service | Diego Sanzana | https://github.com/DIEGHOT/carrito-service |
 | Catalogo-service | Diego Sanzana | https://github.com/DIEGHOT/catalogo-service |
-| Autenticacion-Service | Diego Sanzana |  |
+| Autenticacion-Service | Diego Sanzana | https://github.com/DIEGHOT/autenticacion-service |
 
 ## Despliegue Técnico
 
