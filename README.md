@@ -11,8 +11,8 @@
 | Promociones-service | Josefa Lagos | https://github.com/josefalagos/promociones-service |
 |  | Josefa Lagos |  |
 | Carrito-service | Diego Sanzana | https://github.com/DIEGHOT/carrito-service |
-|  | Diego Sanzana |  |
-|  | Diego Sanzana |  |
+| Catalogo-service | Diego Sanzana | https://github.com/DIEGHOT/catalogo-service |
+| Autenticacion-Service | Diego Sanzana |  |
 
 ## Despliegue Técnico
 
