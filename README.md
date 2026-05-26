@@ -101,3 +101,5 @@ spring.cloud.openfeign.client.config.default.readTimeout=5000
 [cite_start]
 ```
 ###  Muestra de funcionalidad con Videos
+
+Microservicios de Cris: https://youtu.be/q8TV3921SYs
