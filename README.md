@@ -99,3 +99,5 @@ Cada cliente declarativo Feign tiene inyectadas propiedades estrictas de tiempo 
 spring.cloud.openfeign.client.config.default.connectTimeout=3000
 spring.cloud.openfeign.client.config.default.readTimeout=5000
 [cite_start]
+```
+###  Muestra de funcionalidad con Videos
