@@ -1,22 +1,25 @@
 ## Pruebas Unitarias y Cobertura de Reglas de Negocio
 
-Este documento detalla las reglas de negocio invariables de nuestro sistema, el estado actual de las pruebas automatizadas y la deuda técnica asumida por cada integrante del equipo.
+Este documento detalla las reglas de negocio invariables de nuestro sistema, el estado actual de las pruebas automatizadas y la deuda técnica asumida por cada integrante del equipo. 
+
+> 💡 **Nota:** Para ver el detalle completo de las 28 reglas del sistema, consulta el archivo [REGLAS_DE_NEGOCIO.md](./REGLAS_DE_NEGOCIO.md).
 
 ---
 
-### 1. Cristóbal Ruiz - Microservicios de Inventario y Pedidos
+### 1. Cristóbal Ruiz - Microservicio de Inventario
+**Repositorio a evaluar:** [Inventario-Service](https://github.com/GhostCriss/inventario-service)
 
 #### Reglas de Negocio Críticas
-1. **Validación de Stock Negativo**: El stock no puede volverse negativo bajo ninguna circunstancia[cite: 12].
-2. **Productos Duplicados**: No se pueden crear productos duplicados (mismo nombre y categoría)[cite: 12].
-3. **Flujo de Pedido**: El estado del pedido sigue un flujo definido (PENDIENTE -> EN PROCESO -> ENVIADO -> ENTREGADO)[cite: 12].
+1. **Validación de Stock Negativo**: El stock no puede volverse negativo bajo ninguna circunstancia.
+2. **Productos Duplicados**: No se pueden crear productos duplicados (mismo nombre y categoría).
+3. **Visibilidad de ID**: Los productos deben tener un ID visible y único.
 
 #### Cobertura Actual
 | Regla | Estado | Casos Cubiertos |
 |---|---|---|
 | 1. Validación de Stock Negativo | ✅ Cubierta | Stock suficiente (feliz), Stock 0 (error) |
 | 2. Productos Duplicados | ⚠️ Pendiente | Solo caso feliz de creación |
-| 3. Flujo de Pedido | ⚠️ Pendiente | Sin pruebas de transición de estado |
+| 3. Visibilidad de ID | ⚠️ Pendiente | Falta test de validación de formato de ID |
 
 #### Reflexión y Deuda Técnica
 * **Riesgo sin probar**: La creación de productos duplicados no tiene test de caso de error.
@@ -25,42 +28,44 @@ Este documento detalla las reglas de negocio invariables de nuestro sistema, el 
 
 ---
 
-### 2. Diego Sanzana - Microservicios de Carrito y Autenticación
+### 2. Diego Sanzana - Microservicio de Autenticación
+**Repositorio a evaluar:** [Autenticacion-Service](https://github.com/DIEGHOT/autenticacion-service)
 
 #### Reglas de Negocio Críticas
-1. **Límite de Carrito**: No se puede agregar al carrito más cantidad que el stock disponible[cite: 12].
-2. **Registro Obligatorio**: Un cliente debe estar registrado para poder realizar un pedido[cite: 12].
-3. **Unicidad de Correo**: Los datos del cliente deben ser únicos (correo) para evitar cuentas duplicadas[cite: 12].
+1. **Registro Obligatorio**: Un cliente debe estar registrado para poder realizar un pedido.
+2. **Unicidad de Correo**: Los datos del cliente deben ser únicos (correo) para evitar cuentas duplicadas.
+3. **Cierre de Sesión**: La sesión se cierra automáticamente al salir de la aplicación.
 
 #### Cobertura Actual
 | Regla | Estado | Casos Cubiertos |
 |---|---|---|
-| 1. Límite de Carrito | ✅ Cubierta | Agregar cantidad dentro del límite permitido |
-| 2. Registro Obligatorio | ⚠️ Pendiente | Validaciones pendientes en el Controlador |
-| 3. Unicidad de Correo | ⚠️ Pendiente | Falta test de error por registro con correo existente |
+| 1. Registro Obligatorio | ⚠️ Pendiente | Validaciones pendientes en el Controlador |
+| 2. Unicidad de Correo | ⚠️ Pendiente | Falta test de error por registro con correo existente |
+| 3. Cierre de Sesión | ⚠️ Pendiente | Sin test de invalidación de token de sesión |
 
 #### Reflexión y Deuda Técnica
-* **Riesgo sin probar**: Un usuario no registrado podría intentar hacer un bypass del checkout.
-* **Acción Futura**: Implementar pruebas unitarias en el filtro de seguridad y en el servicio de autenticación.
+* **Riesgo sin probar**: Un usuario malintencionado podría intentar registrar múltiples cuentas con el mismo correo.
+* **Acción Futura**: Implementar pruebas unitarias verificando que el servicio lance una excepción al detectar un correo duplicado.
 * **Responsable**: Diego Sanzana
 
 ---
 
-### 3. Josefa Lagos - Microservicios de Promociones y Reembolsos
+### 3. Josefa Lagos - Microservicio [POR DEFINIR]
+**Repositorio a evaluar:** [Link pendiente]
 
 #### Reglas de Negocio Críticas
-1. **Vigencia de Promociones**: Los descuentos tienen validación de vigencia y límites de uso[cite: 12].
-2. **Sistema de Reembolsos**: Existe un sistema de reembolso para pedidos cancelados, vinculado al pedido original[cite: 12].
-3. **Cancelación Válida**: Los pedidos en proceso pueden ser cancelados solo si su estado es "PENDIENTE" o "EN PROCESO"[cite: 12].
+1. **[Regla 1]**: [Descripción pendiente]
+2. **[Regla 2]**: [Descripción pendiente]
+3. **[Regla 3]**: [Descripción pendiente]
 
 #### Cobertura Actual
 | Regla | Estado | Casos Cubiertos |
 |---|---|---|
-| 1. Vigencia de Promociones | ✅ Cubierta | Descuento activo aplicado correctamente |
-| 2. Sistema de Reembolsos | ⚠️ Pendiente | Solo creación de la solicitud de reembolso |
-| 3. Cancelación Válida | ⚠️ Pendiente | Falta prueba de error al intentar cancelar un pedido ENVIADO |
+| 1. [Regla 1] | ⚠️ Pendiente | [Caso pendiente] |
+| 2. [Regla 2] | ⚠️ Pendiente | [Caso pendiente] |
+| 3. [Regla 3] | ⚠️ Pendiente | [Caso pendiente] |
 
 #### Reflexión y Deuda Técnica
-* **Riesgo sin probar**: Aplicación exitosa de códigos de descuentos expirados o con su límite de usos agotado.
-* **Acción Futura**: Desarrollar asserts (MockMvc) para confirmar el rechazo HTTP 400 de cupones inválidos.
+* **Riesgo sin probar**: [Riesgo pendiente]
+* **Acción Futura**: [Acción pendiente]
 * **Responsable**: Josefa Lagos
