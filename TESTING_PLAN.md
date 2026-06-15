@@ -39,15 +39,14 @@ Este documento detalla las reglas de negocio invariables de nuestro sistema, el 
 #### Cobertura Actual
 | Regla | Estado | Casos Cubiertos |
 |---|---|---|
-| 1. Registro Obligatorio | ⚠️ Pendiente | Validaciones pendientes en el Controlador |
-| 2. Unicidad de Correo | ⚠️ Pendiente | Falta test de error por registro con correo existente |
-| 3. Cierre de Sesión | ⚠️ Pendiente | Sin test de invalidación de token de sesión |
+| 1. Registro Obligatorio | ✅ Cubierta | Validación de registro y login exitoso |
+| 2. Unicidad de Correo | ✅ Cubierta | Verificación de exclusión de duplicados |
+| 3. Cierre de Sesión | ✅ Cubierta | Validaciones de integridad de sesión |
 
 #### Reflexión y Deuda Técnica
-* **Riesgo sin probar**: Un usuario malintencionado podría intentar registrar múltiples cuentas con el mismo correo.
-* **Acción Futura**: Implementar pruebas unitarias verificando que el servicio lance una excepción al detectar un correo duplicado.
+* **Estado**: Las pruebas unitarias fueron ejecutadas con éxito (BUILD SUCCESS).
+* **Acción Futura**: Mantener la cobertura al implementar nuevas funcionalidades de seguridad.
 * **Responsable**: Diego Sanzana
-
 ---
 
 ### 3. Josefa Lagos - Microservicio [POR DEFINIR]
