@@ -2,7 +2,7 @@
 
 Este documento detalla las reglas de negocio invariables de nuestro sistema, el estado actual de las pruebas automatizadas y la deuda técnica asumida por cada integrante del equipo. 
 
-> 💡 **Nota:** Para ver el detalle completo de las 28 reglas del sistema, consulta el archivo [REGLAS_DE_NEGOCIO.md](./REGLAS_DE_NEGOCIO.md).
+> 💡 **Nota:** Las reglas del Negocio estan en el archivo: [REGLAS_DE_NEGOCIO.md](./REGLAS_DE_NEGOCIO.md).
 
 ---
 
