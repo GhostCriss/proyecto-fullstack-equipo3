@@ -3,6 +3,7 @@
 ## Microservicios y Repositorios
 | Servicio | Encargado | Repositorio |
 | :--- | :--- | :--- |
+| API-gateway| https://github.com/GhostCriss/api-gateway  |
 | Pagos-Service | Cristobal Ruiz | https://github.com/GhostCriss/pagos-service |
 | Envios-Service | Cristobal Ruiz | https://github.com/GhostCriss/envio-service |
 | Inventario-Service | Cristobal Ruiz | https://github.com/GhostCriss/inventario-service |
