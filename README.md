@@ -4,10 +4,11 @@
 | Servicio | Encargado | Repositorio |
 | :--- | :--- | :--- |
 | API-gateway|   |https://github.com/GhostCriss/api-gateway|
-| Pagos-Service | Cristobal Ruiz | https://github.com/GhostCriss/pagos-service |
-| Envios-Service | Cristobal Ruiz | https://github.com/GhostCriss/envio-service |
-| Inventario-Service | Cristobal Ruiz | https://github.com/GhostCriss/inventario-service |
-| Pedidos-Service | Cristobal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
+| Eureka-Server | Cristóbal Ruiz | https://github.com/GhostCriss/ms-eureka |
+| Pagos-Service | Cristóbal Ruiz | https://github.com/GhostCriss/pagos-service |
+| Envios-Service | Cristóbal Ruiz | https://github.com/GhostCriss/envio-service |
+| Inventario-Service | Cristóbal Ruiz | https://github.com/GhostCriss/inventario-service |
+| Pedidos-Service | Cristóbal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
 | Favoritos-Service | Josefa Lagos | https://github.com/josefalagos/favorito-service |
 | Promociones-service | Josefa Lagos | https://github.com/josefalagos/promociones-service |
 | Reembolsos-service | Josefa Lagos | https://github.com/josefalagos/post-ventas_y_rembolsos-service |
