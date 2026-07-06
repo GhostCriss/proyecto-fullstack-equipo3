@@ -9,9 +9,11 @@
 | Envios-Service | Cristóbal Ruiz | https://github.com/GhostCriss/envio-service |
 | Inventario-Service | Cristóbal Ruiz | https://github.com/GhostCriss/inventario-service |
 | Pedidos-Service | Cristóbal Ruiz | https://github.com/GhostCriss/gestion-pedidos-service |
+| Eureka-Server |  |  |
 | Favoritos-Service | Josefa Lagos | https://github.com/josefalagos/favorito-service |
 | Promociones-service | Josefa Lagos | https://github.com/josefalagos/promociones-service |
 | Reembolsos-service | Josefa Lagos | https://github.com/josefalagos/post-ventas_y_rembolsos-service |
+| Eureka-Server |  |  |
 | Carrito-service | Diego Sanzana | https://github.com/DIEGHOT/carrito-service |
 | Catalogo-service | Diego Sanzana | https://github.com/DIEGHOT/catalogo-service |
 | Autenticacion-Service | Diego Sanzana | https://github.com/DIEGHOT/autenticacion-service |
